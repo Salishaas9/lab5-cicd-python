@@ -51,7 +51,7 @@ jobs:
       - name: Run bandit
         run: bandit -r app.py tests/ -lll -iii
 
-  c  check-vulnerabilities:
+  check-vulnerabilities:
     name: Check Vulnerabilities (pip-audit)
     runs-on: ubuntu-latest
     needs: install-dependencies
